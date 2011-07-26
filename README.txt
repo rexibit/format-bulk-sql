@@ -57,12 +57,12 @@ Examples:
 
 - Trim whitespace from each field:
 	::
-		$ python run.py -t trim -o "/path/to/file/output-sql-query.txt" products "/path/to/file/field-names.txt"
+		$ python run.py -t trim -o "/path/to/file/output-sql-query.txt" table_name "/path/to/file/field-names.txt"
 
 - Search each field for "Array" and replace it with an empty string:
 	::
-		$ python run.py -t search_replace -s "Array" -r "" -o "/path/to/file/output-sql-query.txt" products "/path/to/file/field-names.txt"
+		$ python run.py -t search_replace -s "Array" -r "" -o "/path/to/file/output-sql-query.txt" table_name "/path/to/file/field-names.txt"
 
 - Search in each field for the phrase "yummy cheese" and replace it with "moldy cheese":
 	::
-		$ python run.py -t search_replace_in -s "yummy cheese" -r "moldy cheese" -o "/path/to/file/output-sql-query.txt" products "/path/to/file/field-names.txt"
+		$ python run.py -t search_replace_in -s "yummy cheese" -r "moldy cheese" -o "/path/to/file/output-sql-query.txt" table_name "/path/to/file/field-names.txt"
